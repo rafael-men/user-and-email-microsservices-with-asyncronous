@@ -5,6 +5,50 @@ Sistema de comunicação assíncrona entre microsserviços Java usando RabbitMQ 
 ## 📌 Visão Geral
 
 Este projeto é composto por dois microsserviços desenvolvidos em Java e Spring Boot, para registro de usuários e envio de mensagens por email, integrados por meio do RabbitMQ, permitindo uma arquitetura escalável e resiliente.
-A comunicação entre os serviços ocorre de forma assíncrona, onde o serviço de criação e gestão de usuários publica eventos/mensagens em filas específicas, direcionados ao serviço de envio de emails, garantindo baixo acoplamento e maior disponibilidade.
+A comunicação entre os serviços ocorre de forma assíncrona, onde o serviço de criação e gestão de usuários publica eventos/mensagens em filas específicas, direcionados ao serviço de envio de emails, havendo também um broker para servir de comunicador entre os serviços.
 
 ![Captura de tela 2025-05-20 165552](https://github.com/user-attachments/assets/a7a5c557-1f88-42ca-9f09-70b6c80b23a6)
+![Captura de tela 2025-05-20 172636](https://github.com/user-attachments/assets/b08004cf-7ec9-4f0c-88c6-b57aa4dd7993)
+
+## 🔧 Tecnologias Utilizadas
+- Java.
+- RabbitMQ.
+- Docker.
+- Docker Compose.
+- Spring Framework.
+- Banco de Dados PostgreSQL.
+  
+<hr/>
+
+## 🚀 Como Executar
+
+### Pré-requisitos:
+- Docker
+- Docker Compose
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-projeto.git 
+```
+
+2. Suba os containers com Docker Compose:
+
+```bash
+cd user-and-email-microsservices-with-asyncronous
+docker-compose up
+```
+Isso iniciará o RabbitMQ e os microsserviços. 
+
+Acesse os serviços:
+User : [http://localhost:8079/swagger-ui.](http://localhost:8079/swagger-ui/index.html)
+Email : [http://localhost:8080](http://localhost:8080/swagger-ui/index.html)
+
+## 🤝 Contribuição
+- Contribuições são bem-vindas! Se você quiser melhorar esse projeto, corrigir bugs ou adicionar novas funcionalidades, fique à vontade!
+
+- Faça um fork do repositório.
+- Crie uma nova branch (git checkout -b feature/nova-feature).
+- Commit suas mudanças (git commit -m 'feat: nova feature').
+- Push para a branch (git push origin feature/nova-feature).
+- Abra um Pull Request.
