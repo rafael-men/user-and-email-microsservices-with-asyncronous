@@ -46,8 +46,8 @@ docker-compose up
 Isso iniciará o RabbitMQ e os microsserviços. 
 
 Acesse os serviços:
-User : [http://localhost:8079/swagger-ui.](http://localhost:8079/swagger-ui/index.html)
-Email : [http://localhost:8080](http://localhost:8080/swagger-ui/index.html)
+User : [http://localhost:8079/swagger-ui/index.html](http://localhost:8079/swagger-ui/index.html)
+Email : [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
 ## 🤝 Contribuição
 - Contribuições são bem-vindas! Se você quiser melhorar esse projeto, corrigir bugs ou adicionar novas funcionalidades, fique à vontade!
