@@ -7,8 +7,13 @@ Sistema de comunicação assíncrona entre microsserviços Java usando RabbitMQ 
 Este projeto é composto por dois microsserviços desenvolvidos em Java e Spring Boot, para registro de usuários e envio de mensagens por email, integrados por meio do RabbitMQ, permitindo uma arquitetura escalável e resiliente.
 A comunicação entre os serviços ocorre de forma assíncrona, onde o serviço de criação e gestão de usuários publica eventos/mensagens em filas específicas, direcionados ao serviço de envio de emails, havendo também um broker para servir de comunicador entre os serviços.
 
-![Captura de tela 2025-05-20 165552](https://github.com/user-attachments/assets/a7a5c557-1f88-42ca-9f09-70b6c80b23a6)
-![Captura de tela 2025-05-20 172636](https://github.com/user-attachments/assets/b08004cf-7ec9-4f0c-88c6-b57aa4dd7993)
+<div style="text-align: center;">
+  <img 
+    src="https://github.com/user-attachments/assets/b08004cf-7ec9-4f0c-88c6-b57aa4dd7993" 
+    alt="Captura de tela" 
+    style="max-width: 100%; height: auto; display: block; margin: 0 auto;"
+  >
+</div>
 
 ## 🔧 Tecnologias Utilizadas
 - Java.
